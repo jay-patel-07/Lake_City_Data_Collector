@@ -1,0 +1,125 @@
+body{
+  color: black;
+}
+.mobile {
+  max-width: 800px;
+  margin: auto;
+  background-color: yellow;
+  height: 100%;
+  color: white;
+  border-radius: 10px;
+}
+
+#navbar {
+  display: flex;
+  overflow: hidden;
+  background-color: rgb(125, 121, 120);
+  position: relative;
+}
+#navbar ul{
+  position: relative;
+  top: 70px;
+}
+
+#navbar a{
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+}
+
+#navbar a.icon {
+  background: black;
+  color: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#navbar ul li a:hover{
+  color: white;
+}
+
+
+
+
+
+
+.omega{
+  height: 58px;
+  width: 58px;
+}
+#lakecity{
+  display: absolute;
+  top: 0;
+  height: 58px;
+  width: 100px;
+}
+
+
+
+
+
+
+
+
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 3px 0px;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+}
+#home::before{
+  content: "";
+  position: absolute;
+  top:0px;
+  left: 0px;
+  background: url('2.jpg') center no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.53;
+}
+
+#home p{
+  display: flex;
+  flex-wrap: nowrap;
+  font-style: oblique;
+  font-family: fantasy;
+  font-weight: bold;
+}
+#home h1{
+  color: black;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.head{
+  font-size: 3.8rem;
+  padding: 12px;
+}
+input[type=text]{
+  width: 20%;
+  height: 1%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1.5px solid rgb(210, 171, 157);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.submit{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(210, 141, 117);
+  color: white;
+  margin: 9px;
+  font-size: 0.9rem;
+  border-radius: 9px;
+}
+.submit:hover{
+  background-color: rgb(164, 108, 86);
+  cursor: pointer;
+}

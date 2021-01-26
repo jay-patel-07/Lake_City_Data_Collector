@@ -1,0 +1,291 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255,255,255,0.8);
+  font-size: 24px;
+}
+#myLinks {
+  list-style-type: none;
+  display: none;
+}
+
+@media  only screen and (min-width: 800px){
+:root{
+  --navbar-height: 59px;
+}
+.main{
+  height: 100vh;
+  width: 100vw;
+}
+.navbar-toggle {
+  display: none;
+}
+.omegapic {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+}
+.omega{
+  height: 70px;
+  width: 70px;
+}
+#omega{
+  text-decoration: none;
+  height: 70px;
+  width: 70px;
+}
+.lakecitypic{
+  text-decoration: none;
+  flex-direction: column;
+  position: absolute;
+  right: 10px;
+}
+#lakecity{
+  height: 70px;
+}
+
+
+
+
+
+
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+#navbar{
+  display: flex;
+  position: relative;
+  top: 0px;
+  align-items: center;
+}
+#navbar ul{
+  display: flex;
+}
+#navbar ul li{
+  font-size: 1.1rem;
+}
+
+#navbar ul li a{
+  display: block;
+  padding: 4px 25px;
+  border-radius: 20px;
+  color: white;
+  font-family: fantasy;
+  font-weight: bold;
+}
+#navbar ul li a:hover{
+  color: black;
+}
+
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+}
+#home::before{
+  content: "";
+  position: absolute;
+  top:0px;
+  left: 0px;
+  background: url('2.jpg') center no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.53;
+}
+
+#home p{
+  font-style: oblique;
+  font-family: fantasy;
+  font-weight: bold;
+}
+#home h1{
+  color: black;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.head{
+  font-size: 3.8rem;
+  padding: 12px;
+}
+input[type=text]{
+  width: 20%;
+  height: 1%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1.5px solid rgb(143, 86, 65);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.submit{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(143, 86, 65);
+  color: white;
+  margin: 9px;
+  font-size: 0.9rem;
+  border-radius: 9px;
+}
+.submit:hover{
+  background-color: rgb(164, 108, 86);
+  cursor: pointer;
+}
+.image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(205, 200, 207);
+
+}
+.image>div{
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  justify-content:center;
+  overflow-x: none;
+}
+.image>div>img{
+  padding: 10px 10px;
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+}
+.text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(205, 200, 207);
+}
+
+.text>div>ul>li{
+  padding: 10px 10px;
+  list-style-type:circle;
+}
+.prof{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.prof>div>img{
+  border-radius: 30px;
+  display: flex;
+  padding: 10px 10px;
+  height: 250px;
+  width: 250px;
+}
+.prof>div{
+  box-shadow: 5px 5px 10px 3px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+ /*Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+ /*Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+ /*Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+ /*The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+}
